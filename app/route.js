@@ -78,6 +78,10 @@ function myRoute(url='home')
 {
 	AppRoute.fresh(url);
 	updateTitle(url.toUpperCase());
+	Garuda('app').setAttr({
+		key:'class',
+		value:'animated wobble'
+	});
 }
 function destroy()
 {
