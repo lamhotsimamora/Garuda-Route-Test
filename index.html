@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title id="title"></title>
+	<link rel="stylesheet" href="asset/bootstrap4.min.css">
+	<script src="http://localhost/Garuda-Javascript/src/garuda.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="og:image" 			content="" />
+	<meta property="og:image"     	content="" />
+	<link rel="shortcut icon" type="image/png" href="icon.png"/>
+	<meta name="ROBOTS" 			content="index"/>
+	<meta name="Author" 			content="@lamhotsimamora" />
+	<meta name="copyright" 			content="Copyright@2018 | All Right Reserved" />
+	<meta property="og:title" 		content="Garuda Route Test" />
+	<meta property="og:description" content="Garuda Javascript 2 has been supported Routing" />
+	<meta property="og:name"      	content="" />
+	<meta name="language" 		  	content="Indonesian, English" />
+	<meta name="distribution" 	  	content="Global" />
+	<meta name="rating" 		  	content="General" />
+	<meta name="expires" 		  	content="1800" />
+	<meta name="theme-color"      	content="#fdcb6e"> 
+</head>
+<body>
+	<div id="header">
+		
+	</div>
+	<div id="app">
+		<div class="jumbotron">
+			<br>
+			<br>
+			<br>
+		</div>
+	</div>
+	<div id="footer">
+	</div>
+
+	<template id="tmp_header">
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <a class="navbar-brand" href="./#/home" onclick="myRoute('home');" style="color: white">Home</a>
+  <button class="navbar-toggler" onclick="" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="./#/category" style="color: white" onclick="myRoute('category');">Category </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="./#/profile" style="color: white" onclick="myRoute('profile');">Profile</a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" href="./#/about" style="color: white" onclick="myRoute('about');">About</a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" href="./#/contact" style="color: white" onclick="myRoute('contact');">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="./#/info" style="color: white" onclick="myRoute('info');">Info</a>
+      </li>
+
+        <li class="nav-item">
+        <a class="nav-link" href="./#/Error" style="color: white" onclick="myRoute('error');">Error</a>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" href="./#/nothing" style="color: white" onclick="myRoute('nothing');">Nothing</a>
+      </li>
+
+      <li class="nav-item">
+      	<a class="btn btn-danger btn-sm" onclick="destroy();" style="color: white">Destroy</a>
+      </li>
+    </ul>
+    
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" id="t_search" onkeypress="enterSearch(event);" type="search" placeholder="Search" aria-label="Search">
+      <button type="button" class="btn btn-outline-secondary my-2 my-sm-0" onclick="searchBlog();">Search</button>
+    </form>
+  </div>
+</nav>
+	</template>
+
+	<template id="tmp_footer">
+		<div class="jumbotron">
+		 	<h6 class="text-center">Copyright@2018 | by Garuda Javascript 2</h6>
+		</div>
+	</template>
+
+	<template id="tmp_contact">
+		<div class="jumbotron">
+			<h3>Contact</h3><br>
+			<hr>
+			<p>
+				Name  : <strong>#name# </strong><br>
+				Email : <strong>#email# </strong><br>
+				Phone : <strong>#phone#  </strong><br> 
+				Web   : <strong>#website#  </strong><br> 
+			</p>
+			<hr>
+			
+		</div>
+	</template>
+	
+	<div id="error" style="display: none">
+		<div class="jumbotron">
+			<hr>
+			<h2 class="text-center" style="color: red">
+				ERROR Template From DIV
+			</h2>
+		</div>
+	</div>
+	
+
+	<garuda-import el="code" src="asset/jquery.min" extension="js">
+		
+	</garuda-import>
+
+</body>
+<script src="app/app.js"></script>
+<script src="app/route.js"></script>
+<script src="app/event.js"></script>
+</html>

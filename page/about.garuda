@@ -1,0 +1,12 @@
+<div class="jumbotron"> 
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">About Me</h1>
+    <p class="lead">
+    	Name   : <strong>Lamhot Simamora</strong>	 <br>
+    	Email  : <strong>lamhotsimamora36@gmail.com</strong> <br>
+    	Github : <strong>@lamhotsimamora</strong>
+    </p>
+  </div>
+</div>
+</div>
