@@ -86,6 +86,9 @@ function myRoute(url='home')
 function destroy()
 {
 	AppRoute.destroy();
+	_a(`
+		Route has been destroyed ! Refresh the page for reset !
+	`);
 }
 
 
