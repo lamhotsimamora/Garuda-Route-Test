@@ -74,15 +74,7 @@ var AppRoute = new GarudaRoute()
 		}
 	]);
 
-function myRoute(url='home')
-{
-	AppRoute.fresh(url);
-	updateTitle(url.toUpperCase());
-	Garuda('app').setAttr({
-		key:'class',
-		value:'animated wobble'
-	});
-}
+
 function destroy()
 {
 	AppRoute.destroy();
@@ -91,4 +83,7 @@ function destroy()
 	`);
 }
 
-
+function __GarudaRoute()
+{
+	return AppRoute;
+}

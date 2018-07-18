@@ -40,7 +40,7 @@
 
 	<template  id="tmp_header">
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-  <a class="navbar-brand" href="./#/home" onclick="myRoute('home');" style="color: white">Home</a>
+  <garuda-route-link class="navbar-brand" route="Home"></garuda-route-link>
   <button class="navbar-toggler" onclick="" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -48,31 +48,35 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="./#/category" style="color: white" onclick="myRoute('category');">Category </a>
+      	<garuda-route-link class="navbar-brand" route="Category"></garuda-route-link>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="./#/profile" style="color: white" onclick="myRoute('profile');">Profile</a>
+      	<garuda-route-link class="navbar-brand" route="Profile"></garuda-route-link>
+       
       </li>
 
        <li class="nav-item">
-        <a class="nav-link" href="./#/about" style="color: white" onclick="myRoute('about');">About</a>
+       	<garuda-route-link class="navbar-brand" route="About"></garuda-route-link>
       </li>
 
        <li class="nav-item">
-        <a class="nav-link" href="./#/contact" style="color: white" onclick="myRoute('contact');">Contact</a>
+       	<garuda-route-link class="navbar-brand" route="Contact"></garuda-route-link>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="./#/info" style="color: white" onclick="myRoute('info');">Info</a>
+  		<garuda-route-link class="navbar-brand" route="Info"></garuda-route-link>
+        
       </li>
 
         <li class="nav-item">
-        <a class="nav-link" href="./#/Error" style="color: white" onclick="myRoute('error');">Error</a>
+		<garuda-route-link class="navbar-brand" route="Error"></garuda-route-link>
+       
       </li>
 
        <li class="nav-item">
-        <a class="nav-link" href="./#/nothing" style="color: white" onclick="myRoute('nothing');">Nothing</a>
+   		<garuda-route-link class="navbar-brand" route="Nothing"></garuda-route-link>
+       
       </li>
 
       <li class="nav-item">
